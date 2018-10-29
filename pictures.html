@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 3- Collage</title>
+
+	
+
+	<style type="text/css">
+		body{ 
+		  }
+*{
+	box-sizing: border-box;
+}
+
+		.container{
+
+			display: grid;
+			grid-template-columns:1fr 1fr 1fr 1fr;
+			grid-template-rows: 2fr 2fr 2fr ;
+			grid-template-areas: 
+			" p1 p1 p2 p2"
+			" p3 p4 p4 p5"
+			" p6 p6 p7 p7";
+			background: blue;
+			min-height: 100vh;
+			 grid-gap:10px ;
+	}
+
+	.item {
+		background: black;
+		min-height: 100vh;
+		min-width:100vh;
+	
+	}
+
+	#photo1{ 
+		grid-area:p1;
+		background : url(https://cdn2.newsok.biz/cache/w620-e40564db8bb199c86e3d44532cbe635c.jpg);
+		background-size:cover;
+		background-position:center;	 
+	 }
+
+	 #photo2{
+	 	grid-area:p2;
+		background : url(https://usatthunderwire.files.wordpress.com/2018/04/usatsi_10505312.jpg?w=1000&h=600&crop=1);
+		background-size:cover;
+		background-position:center;	 
+}
+	#photo3{
+		grid-area:p3;
+		background : url(http://dsz7vodgjx60a.cloudfront.net/wp-content/uploads/2015/01/10131550/bil-westbrook2.jpg);
+		background-size:cover;
+		background-position:center;	  
+	}
+
+	#photo4{
+		grid-area:p4;
+		background : url(https://media.spokesman.com/photos/2017/04/06/Thunder_Grizzlies_Basketball.JPG.jpg); 
+		background-size:cover;
+		background-position:center;	 
+	}
+	#photo5{
+		grid-area:p5;
+		background : url(https://www.nbcsports.com/philadelphia/sites/csnphilly/files/styles/article_hero_image/public/2018/02/23/uspresswire-thunder-russell-westbrook.jpg?itok=DGNEl97s); 
+		background-size:cover;
+		background-position:center;	 
+	}
+	#photo6{
+		grid-area:p6;	
+		background : url(https://blog-blogmediainc.netdna-ssl.com/upload/SportsBlogcom/1264668/0992752001421356896_filepicker.jpg);
+		background-size:cover;
+		background-position:center;	  
+	}
+#photo7{
+		grid-area:p7;	
+		background : url("https://cdn.vox-cdn.com/thumbor/MZBZsImqms0jyDELBcjn_QPs2hw=/0x0:1200x1800/1200x0/filters:focal(0x0:1200x1800):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/9868977/russ_playoff_outfit.jpg");
+		background-size:cover;
+			  
+	}
+
+
+	</style>
+<!-- Do NOT edit any code below this line. -->
+</head>
+<body>
+	
+	<div class="container">
+		<div id="photo1" class=".items">
+		
+		</div>
+
+		<div id="photo2" class=".items">
+			
+		</div>
+
+		<div id="photo3" class=".items">
+			
+		</div>
+
+		<div id="photo4" class=".items">
+			
+		</div>
+
+		<div id="photo5" class=".items">
+			
+		</div>
+
+		<div id="photo6" class=".items">	
+			
+		</div>
+
+		<div id="photo7" class=".items">
+
+		</div>	
+
+
+	</div>
+</body>
+</html>
