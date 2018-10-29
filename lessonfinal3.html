@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 3- Collage</title>
+
+	
+
+	<style type="text/css">
+		body{ 
+		  }
+*{
+	box-sizing: border-box;
+}
+
+		.container{
+
+			display: grid;
+			grid-template-columns:2fr 1fr 1fr 2fr;
+			grid-template-rows: 1fr 1fr 1fr ;
+			grid-template-areas: 
+			" p1 p2 p2 p3"
+			" p4 p4 p5 p5"
+			" p6 p6 p6 p6";
+			background: black;
+			min-height: 100vh;
+			 grid-gap:10px ;
+	}
+
+	.item {
+		background: black;
+		min-height: 100vh;
+		min-width:100vh;
+	
+	}
+
+	#photo1{ 
+		grid-area:p1;
+		background : url(trip1.jpg);
+		background-size:cover;
+		background-position:center;	 
+	 }
+
+	 #photo2{
+	 	grid-area:p2;
+		background : url(trip2.jpg);
+		background-size:cover;
+		background-position:center;	 
+}
+	#photo3{
+		grid-area:p3;
+		background : url(trip3.jpg);
+		background-size:cover;
+		background-position:center;	  
+	}
+
+	#photo4{
+		grid-area:p4;
+		background : url(trip4.jpg); 
+		background-size:cover;
+		background-position:center;	 
+	}
+	#photo5{
+		grid-area:p5;
+		background : url(trip5.jpg); 
+		background-size:cover;
+		background-position:center;	 
+	}
+	#photo6{
+		grid-area:p6;	
+		background : url(trip6.jpg);
+		background-size:cover;
+		background-position:center;	  
+	}
+
+
+
+	</style>
+<!-- Do NOT edit any code below this line. -->
+</head>
+<body>
+	
+	<div class="container">
+		<div id="photo1" class=".items">
+		
+		</div>
+
+		<div id="photo2" class=".items">
+			
+		</div>
+
+		<div id="photo3" class=".items">
+			
+		</div>
+
+		<div id="photo4" class=".items">
+			
+		</div>
+
+		<div id="photo5" class=".items">
+			
+		</div>
+
+		<div id="photo6" class=".items">
+			
+		</div>
+	</div>
+</body>
+</html>
